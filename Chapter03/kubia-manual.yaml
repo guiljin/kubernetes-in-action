@@ -7,5 +7,5 @@ spec:
   - image: luksa/kubia
     name: kubia
     ports:
-    - containerPort: 8080
+    - containerPort: 8080 # 在pod定义中指定端口纯粹是展示性的(informational)，相当于Dockerfile里的EXPOSE
       protocol: TCP
